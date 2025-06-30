@@ -45,6 +45,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/your-username/your-repo"
-  },
-  "icon": "images/icon.png"
+  }
 }
