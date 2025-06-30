@@ -1,0 +1,50 @@
+{
+  "name": "trial-chat-ss",
+  "displayName": "LiveKit Chat & Screen Share",
+  "description": "POC for LiveKit integration with VS Code featuring chat and screen sharing",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.101.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:trial-chat-ss.openChat"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "trial-chat-ss.openChat",
+        "title": "Open LiveKit Chat"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "dependencies": {
+    "livekit-client": "^2.0.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.101.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "eslint": "^9.25.1",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2",
+    "vsce": "^2.24.0"
+  },
+  "publisher": "your-publisher-id",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/your-repo"
+  },
+  "icon": "images/icon.png"
+}
